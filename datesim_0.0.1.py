@@ -22,7 +22,9 @@ def interactions():
             print("Sup I'm lana. I'm 19. I have dark blonde hair which reaches to my shoulders. My eyes are blue and I have freckles. I'm about 165cm tall and I like to wear vibrant clothes. I'm always optimistic and I'm rarely anxious or sad. I like to go to parties and other social events.")
         else: interactions()
     elif (woman == "Jane"):
-        print("Jane: true")
+        if (looks>25, jacked>20, attraction>2):
+            print("Hello I'm Jenny and I'm 18. I have Green eyes and green hair, and I'm really tall, about 190cm. I curl my hair up like Tatsumaki from One Punch Man, tho my figure is more like Fubuki's 😉 I like to read manga ans watch anime whenever I'm not studying.")
+        else: interactions()
     elif (woman == "Jenny"):
         print("Jenny: true")
     elif (woman == "Anna"):
