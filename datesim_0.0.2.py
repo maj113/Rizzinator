@@ -37,6 +37,7 @@ def interactions():
         print("Jenny: true")
     elif (woman == "Anna"):
         print("Anna: true")
+    #test intro. wont be used later on 
     elif (woman == "Mimi"):
         if (looks>10, jacked>10, attraction>1):
             print("i Really like you")
