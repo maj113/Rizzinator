@@ -18,7 +18,7 @@ def interactions():
             sleep(10)
             accept_mia = input(f"do you wish to continue Mia's story? If so, type yes ")
             if (accept_mia == "yes" or "y"):
-                print('you are walking down the hallway on your first day of college, when you look behind you and spot one of if not the most beautiful girl you have ever seen, walking behind you. You just can\'t take your eyes off of her and because you are walking with your head turned backwards, you bump into some poor guy who was just minding his buisness. Everything you are holding falls on the ground andyou scramble to pick it all up. Suddenly a soft angelic voice asks you "hey, may I help you?" it\'s her! The beautifull tall motherly girl that caused you to drop all of your stuff. you become so flustered that you can\'t answer, watching as she picks your stuff up into a neat pile. "Here you go" she says with a smile on her stunning face. Before you have the chance to say anything she leaves just as the bell rings.')
+                print('you are walking down the hallway on your first day of college, when you look behind you and spot one of if not the most beautiful girl you have ever seen, walking behind you. You just can\'t take your eyes off of her and because you are walking with your head turned backwards, you bump into some poor guy who was just minding his buisness. Everything you are holding falls on the ground and you scramble to pick it all up. Suddenly a soft angelic voice asks you "hey, may I help you?" it\'s her! The beautifull tall motherly girl that caused you to drop all of your stuff. you become so flustered that you can\'t answer, watching as she picks your stuff up into a neat pile. "Here you go" she says with a smile on her stunning face. Before you have the chance to say anything she leaves just as the bell rings.')
             else: interactions()
         else: interactions() 
     elif (woman == "Emma"):
@@ -51,7 +51,7 @@ interactions()
 
 
 """
-credits:
+Credits:
 Maj - Lead programmer, spell checker
 Gorazd - Lead Writer, code review, idea provider
 """
