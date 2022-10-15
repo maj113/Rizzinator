@@ -1,7 +1,7 @@
 #Rizzsim_0.0.2
 #KrpanKodingKompany, All rights reserved 2022
 from woman_intro import miaIntr, emmaIntr, lanaIntr, janeIntr
-from stats import looks, jacked, attraction, player
+from stats import player_stats
 from time import sleep
 from random import choice
 #hopefully this expands
@@ -12,7 +12,7 @@ woman = (choice(woman_list))
 
 def interactions():
     if (woman == "Mia"):
-        if (looks>15, jacked>20, attraction>3):
+        if player_stats >= [20,25,2] : 
             print(miaIntr)
             sleep(10)
             accept_mia = input(f"do you wish to continue Mia's story? If so, type yes ")
