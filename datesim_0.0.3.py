@@ -5,25 +5,25 @@ from time import sleep
 from random import choice
 import misc.mainmenu as mm
 from misc.stats import player_stats
+from gameplay import mia
+
 #woman_list = ["Mia", "Emma", "Lana", "Jane", "Jenny", "Anna", "Mimi", "Lina", "Anya"]
 woman_list = ["Mia"]
-woman = (choice(woman_list))
 player = input(str("what is your name? "))
 print("Your current stats are: \n","Looks=",player_stats[0],"\n Jacked=",player_stats[1],"\n Attraction=",player_stats[2])
+sleep(2)
+mia.levelneeded()
+if mia.mialvl[0:2] < player_stats[0:2]:
+    print("you can pick Mia")
+    sleep(2)
+    mm.gamemenu()
+else: 
+    print("your stats are too low, you can get better stats in the gamemenu")
+    sleep(2)
+    mm.gamemenu()
 sleep(5)
-def interactions():
-    if (woman == "Mia"):
-        if player_stats >= [20,25,2]: 
-            print(wi.miaIntr)
-            sleep(0)
-            accept_mia = input("do you wish to continue Mia's story? If so, type yes ")
-            if (accept_mia == "yes" or "y"):
-                print(ms.MiaStory1)
-                sleep(0)
-                mm.gamemenu()
-            else: interactions()
-        else: interactions() 
-interactions()
+
+
 
 
 
