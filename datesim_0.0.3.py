@@ -1,24 +1,26 @@
-#Rizzsim_0.0.2
+#Rizzsim_0.0.3
 #KrpanKodingKompany, All rights reserved 2022
 from stories import woman_intro as wi, MiaStories as ms
-from stats import player, stats
 from time import sleep
 from random import choice
-#hopefully this expands
+import misc.mainmenu as mm
+from misc.stats import player_stats
 #woman_list = ["Mia", "Emma", "Lana", "Jane", "Jenny", "Anna", "Mimi", "Lina", "Anya"]
 woman_list = ["Mia"]
-#test if woman picker works correctly
 woman = (choice(woman_list))
-
+player = input(str("what is your name? "))
+print("Your current stats are: \n","Looks=",player_stats[0],"\n Jacked=",player_stats[1],"\n Attraction=",player_stats[2])
+sleep(5)
 def interactions():
     if (woman == "Mia"):
-        if stats() >= [20,25,2]: 
+        if player_stats >= [20,25,2]: 
             print(wi.miaIntr)
-            sleep(10)
-            accept_mia = input(f"do you wish to continue Mia's story? If so, type yes ")
+            sleep(0)
+            accept_mia = input("do you wish to continue Mia's story? If so, type yes ")
             if (accept_mia == "yes" or "y"):
                 print(ms.MiaStory1)
-                sleep(10)            
+                sleep(0)
+                mm.gamemenu()
             else: interactions()
         else: interactions() 
 """
