@@ -23,33 +23,7 @@ def interactions():
                 mm.gamemenu()
             else: interactions()
         else: interactions() 
-"""
-    elif (woman == "Emma"):
-        if (looks>34, jacked>25, attraction>3):
-            print(wi.emmaIntr)
-        else: interactions()
-    elif (woman == "Lana"):
-        if (looks>30, jacked>25, attraction>3):
-            print(wi.lanaIntr)
-        else: interactions()
-    elif (woman == "Jane"):
-        if (looks>25, jacked>20, attraction>2):
-            print(wi.janeIntr)
-        else: interactions()
-    elif (woman == "Jenny"):
-        print("Jenny: true")
-    elif (woman == "Anna"):
-        print("Anna: true")
-    #test intro. wont be used later on 
-    elif (woman == "Mimi"):
-        if (looks>10, jacked>10, attraction>1):
-            print("i Really like you")
-        else: interactions()
-    elif (woman == "Lina"):
-        print("Lina: true")
-    elif (woman == "Anya"):
-        print("Anya: true")
-"""
+
 interactions()
 
 
