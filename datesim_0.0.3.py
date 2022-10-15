@@ -23,7 +23,6 @@ def interactions():
                 mm.gamemenu()
             else: interactions()
         else: interactions() 
-
 interactions()
 
 
