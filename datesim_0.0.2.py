@@ -1,20 +1,19 @@
 #Rizzsim_0.0.2
 #KrpanKodingKompany, All rights reserved 2022
-from woman_intro import miaintr, emmaintr, lanaintr, janeintr
-from stats import looks, jacked, attraction
-from random import choice
+from woman_intro import miaIntr, emmaIntr, lanaIntr, janeIntr
+from stats import looks, jacked, attraction, player
 from time import sleep
+from random import choice
 #hopefully this expands
 #woman_list = ["Mia", "Emma", "Lana", "Jane", "Jenny", "Anna", "Mimi", "Lina", "Anya"]
 woman_list = ["Mia"]
-#test if woman picker works correctly 
-player = input(str("what is your name? "))
+#test if woman picker works correctly
 woman = (choice(woman_list))
 
 def interactions():
     if (woman == "Mia"):
         if (looks>15, jacked>20, attraction>3):
-            print(miaintr)
+            print(miaIntr)
             sleep(10)
             accept_mia = input(f"do you wish to continue Mia's story? If so, type yes ")
             if (accept_mia == "yes" or "y"):
@@ -23,15 +22,15 @@ def interactions():
         else: interactions() 
     elif (woman == "Emma"):
         if (looks>34, jacked>25, attraction>3):
-            print(emmaintr)
+            print(emmaIntr)
         else: interactions()
     elif (woman == "Lana"):
         if (looks>30, jacked>25, attraction>3):
-            print(lanaintr)
+            print(lanaIntr)
         else: interactions()
     elif (woman == "Jane"):
         if (looks>25, jacked>20, attraction>2):
-            print(janeintr)
+            print(janeIntr)
         else: interactions()
     elif (woman == "Jenny"):
         print("Jenny: true")
