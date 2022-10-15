@@ -20,6 +20,7 @@ def interactions():
                 print('you are walking down the hallway on your first day of college, when you look behind you and spot one of if not the most beautiful girl you have ever seen, walking behind you. You just can\'t take your eyes off of her and because you are walking with your head turned backwards, you bump into some poor guy who was just minding his buisness. Everything you are holding falls on the ground and you scramble to pick it all up. Suddenly a soft angelic voice asks you "hey, may I help you?" it\'s her! The beautifull tall motherly girl that caused you to drop all of your stuff. you become so flustered that you can\'t answer, watching as she picks your stuff up into a neat pile. "Here you go" she says with a smile on her stunning face. Before you have the chance to say anything she leaves just as the bell rings.')
             else: interactions()
         else: interactions() 
+"""
     elif (woman == "Emma"):
         if (looks>34, jacked>25, attraction>3):
             print(emmaIntr)
@@ -45,7 +46,9 @@ def interactions():
         print("Lina: true")
     elif (woman == "Anya"):
         print("Anya: true")
+"""
 interactions()
+
 
 
 
