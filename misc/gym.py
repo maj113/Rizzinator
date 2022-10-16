@@ -18,6 +18,7 @@ def gymExcercise():
     else:
         print(player_stats)
         player_stats[1] = player_stats[1] + excerciseTime
+        sleep(excerciseTime)
         print(f"you got closer to being an absolute CHAD, good work chap. Your new stats are")
     print(player_stats)
     
