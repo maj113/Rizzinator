@@ -7,7 +7,6 @@ from gameplay import mia
 import misc.mainmenu as mm
 from misc.plstats import player_stats
 #woman_list = ["Mia", "Emma", "Lana", "Jane", "Jenny", "Anna", "Mimi", "Lina", "Anya"]
-woman_list = ["Mia"]
 player = input(str("what is your name? "))
 print("Your current stats are: \n","Looks=",player_stats[0],"\n Jacked=",player_stats[1],"\n Attraction=",player_stats[2])
 sleep(2)

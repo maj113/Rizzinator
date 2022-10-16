@@ -1,6 +1,4 @@
 #random comment cause this is what devs do... right?
-
-import sys
 from time import sleep
 from random import randint
 

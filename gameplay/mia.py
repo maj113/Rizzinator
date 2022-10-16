@@ -1,4 +1,5 @@
 from time import sleep
+from misc.mainmenu import gamemenu
 from stories import woman_intro as wi, MiaStories as ms
 
 def levelneeded():
@@ -9,15 +10,13 @@ def levelneeded():
 def miaintro():
     print(wi.miaIntr)
     sleep(10)
-    miacontinue = input("Do you wanna continue Mia's story, if so type yes ")
-    print(miacontinue)
+    miacontinue = input("Do you wanna continue Mia's story, if so type yes\n ")
     if miacontinue == "yes":
         sleep(5)
         miaFirstStory()
 
 def miaStory2():
-    miacontinue = input("Do you wanna continue Mia's story, if so type yes ")
-    print(miacontinue)
+    miacontinue = input("Do you wanna continue Mia's story, if so type yes\n ")
     if miacontinue == "yes":
         sleep(2)
         miaSecondStory()
@@ -33,4 +32,5 @@ def miaFirstStory():
 
 def miaSecondStory():
     print(ms.MiaStory2)
+    gamemenu()
     sleep(10)
