@@ -23,12 +23,12 @@ def gamemenu():
         
     elif gamechoice == "4":
         print("Select your character")
-        if mia.levelneeded() < player_stats:
+        if mia.mialvl[0] <= player_stats[0] and mia.mialvl[1] <= player_stats[1] and mia.mialvl[2] <= player_stats[2]:
             print("you can pick Mia")
         selected_story = input("Who are you picking? ")
         if (selected_story) == ("mia"):
             mia.miaintro()
 
-        elif player_stats < mia.mialvl:
+        elif mia.mialvl[0] > player_stats[0] and mia.mialvl[1] > player_stats[1] and mia.mialvl[2] > player_stats[2]:
             print("You can not play Mia's story if your stats are too low!")
         else: exit()
