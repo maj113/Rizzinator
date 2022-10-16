@@ -11,8 +11,7 @@ def gymExcercise():
     from misc.plstats import player_stats
     print(player_stats)
     excerciseTime = int(input("how long do you wish to excercise for? Use seconds: "))
-    maxExcerciseTime = 20
-    if excerciseTime > maxExcerciseTime:
+    if excerciseTime > 20:
         print("you can not excercise for more than 20 seconds!")
         gymExcercise()
     else:
@@ -20,5 +19,5 @@ def gymExcercise():
         sleep(excerciseTime)
         print(f"you got closer to being an absolute CHAD, good work chap. Your new stats are")
     print(player_stats)
-    
+  
 
