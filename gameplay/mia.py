@@ -22,8 +22,7 @@ def miaStory2():
         miaSecondStory()
     
     else:
-       from misc.mainmenu import gamemenu
-       gamemenu()  
+       gamemenu() 
 
 
 def miaFirstStory():
