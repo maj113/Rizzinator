@@ -10,12 +10,15 @@ def gamemenu():
     gamechoice = input("Input the number next to the action you want to do ")
     if  gamechoice == "1":
         player_stats[1] = (player_stats[1]+randint(0,2))
+
     elif gamechoice == "2":
         print("Aight go touch grass")
         exit()
+
     elif gamechoice == "3":
         print("Looks= ",player_stats[0],"Jacked= ",player_stats[0],"Attraction= ",player_stats[0])
         sleep(5)
+        
     elif gamechoice == "4":
         print("Select your character")
         if mia.levelneeded() < player_stats:
@@ -24,4 +27,7 @@ def gamemenu():
         print(selected_story)
         if (selected_story) == ("mia"):
             mia.miaintro()
+
+        elif player_stats < mia.levelneeded:
+            print("You can not play Mia's story if your stats are too low!")
         else: exit()
