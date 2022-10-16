@@ -2,9 +2,8 @@ from random import randint
 from gameplay import mia
 from time import sleep
 from misc.gym import gymExcercise
-from misc.stats import stats1
-stats1()
-from misc.stats import player_stats
+from misc.plstats import player_stats
+
 menuchoices = ("Hit the gym [1]\n ", "Exit the game [2]\n", "Check current stats [3]\n"," Play story from beginning [4]")
 def gamemenu():
     print("What do you want to do:\n " , *menuchoices)
@@ -29,6 +28,6 @@ def gamemenu():
         if (selected_story) == ("mia"):
             mia.miaintro()
 
-        elif mia.mialvl[0] > player_stats[0] and mia.mialvl[1] > player_stats[1] and mia.mialvl[2] > player_stats[2]:
+        elif mia.mialvl[0] > player_stats[0] and mia.mialvl[1] >player_stats[1] and mia.mialvl[2] > player_stats[2]:
             print("You can not play Mia's story if your stats are too low!")
         else: gamemenu()
