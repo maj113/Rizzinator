@@ -3,11 +3,12 @@
 import sys
 from time import sleep
 from random import randint
-from stats import player_stats
+
 
 def gymExcercise():
     print("You packed your gym shorts, protein shake and headed to your local gym.")
     print("your current stats are")
+    from stats import player_stats
     print(player_stats)
     excerciseTime = int(input("how long do you wish to excercise for? Use seconds: "))
     maxExcerciseTime = 20
