@@ -3,17 +3,16 @@
 from stories import woman_intro as wi, MiaStories as ms
 from time import sleep
 from random import choice
+from gameplay import mia
 import misc.mainmenu as mm
 from misc.stats import player_stats
-from gameplay import mia
-
 #woman_list = ["Mia", "Emma", "Lana", "Jane", "Jenny", "Anna", "Mimi", "Lina", "Anya"]
 woman_list = ["Mia"]
 player = input(str("what is your name? "))
 print("Your current stats are: \n","Looks=",player_stats[0],"\n Jacked=",player_stats[1],"\n Attraction=",player_stats[2])
 sleep(2)
 mia.levelneeded()
-if mia.mialvl[0:2] < player_stats[0:2]:
+if mia.mialvl[0] <= player_stats[0] and mia.mialvl[1] <= player_stats[1] and mia.mialvl[2] <= player_stats[2]:
     print("you can pick Mia")
     sleep(2)
     mm.gamemenu()
