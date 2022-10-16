@@ -18,7 +18,7 @@ if mia.mialvl[0:2] < player_stats[0:2]:
     sleep(2)
     mm.gamemenu()
 else: 
-    print("your stats are too low, you can get better stats in the gamemenu")
+    print("your stats are too low, you can get better stats in the menu.")
     sleep(2)
     mm.gamemenu()
 sleep(5)
