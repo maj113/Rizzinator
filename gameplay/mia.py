@@ -1,7 +1,4 @@
 from time import sleep
-from tkinter import Misc
-
-
 from stories import woman_intro as wi, MiaStories as ms
 def levelneeded():
     global mialvl
