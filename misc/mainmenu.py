@@ -31,4 +31,4 @@ def gamemenu():
 
         elif mia.mialvl[0] > player_stats[0] and mia.mialvl[1] > player_stats[1] and mia.mialvl[2] > player_stats[2]:
             print("You can not play Mia's story if your stats are too low!")
-        else: exit()
+        else: gamemenu()
