@@ -5,7 +5,7 @@ from time import sleep
 from random import choice
 from gameplay import mia
 import misc.mainmenu as mm
-from misc.stats import player_stats
+from misc.plstats import player_stats
 #woman_list = ["Mia", "Emma", "Lana", "Jane", "Jenny", "Anna", "Mimi", "Lina", "Anya"]
 woman_list = ["Mia"]
 player = input(str("what is your name? "))
