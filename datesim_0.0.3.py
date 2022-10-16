@@ -28,7 +28,7 @@ sleep(5)
 
 
 
-#I like tall goth futas hihi
+
 """
 Credits:
 Maj - Lead programmer, spell checker
