@@ -3,6 +3,7 @@ from gameplay import mia
 from time import sleep
 from misc.gym import gymExcercise
 from misc.stats import stats1
+
 stats1()
 from misc.stats import player_stats
 menuchoices = ("Hit the gym [1]\n ", "Exit the game [2]\n", "Check current stats [3]\n"," Play story from beginning [4]")
