@@ -1,10 +1,11 @@
 from random import randint
+from inspect import getmembers, isfunction
 from gameplay import mia
 from time import sleep
 from misc.gym import gymExcercise
 from misc.plstats import player_stats
-
-menuchoices = ("Hit the gym [1]\n ", "Exit the game [2]\n", "Check current stats [3]\n"," Play story from beginning [4]")
+story_list = []
+menuchoices = ("Hit the gym [1]\n ", "Exit the game [2]\n","Check current stats [3]\n","Play story from beginning [4]\n"," Continue story [5]")
 def gamemenu():
     print("What do you want to do:\n " , *menuchoices)
     gamechoice = input("Input the number next to the action you want to do ")
@@ -21,13 +22,28 @@ def gamemenu():
         sleep(5)
         
     elif gamechoice == "4":
-        print("Select your character")
-        if mia.mialvl[0] <= player_stats[0] and mia.mialvl[1] <= player_stats[1] and mia.mialvl[2] <= player_stats[2]:
-            print("you can pick Mia")
-        selected_story = input("Who are you picking? ")
-        if (selected_story) == ("mia"):
-            mia.miaintro()
-
-        elif mia.mialvl[0] > player_stats[0] and mia.mialvl[1] >player_stats[1] and mia.mialvl[2] > player_stats[2]:
-            print("You can not play Mia's story if your stats are too low!")
-        else: gamemenu()
+        def characterselector():
+            global selected_story
+            print("Select your character")
+            if mia.mialvl[0] <= player_stats[0] and mia.mialvl[1] <= player_stats[1] and mia.mialvl[2] <= player_stats[2]:
+                print("you can pick Mia")
+            selected_story = input("Who are you picking? ")
+            if (selected_story) == ("mia"):
+                mia.miaintro()
+                story_list.append(F"{selected_story}")
+            elif mia.mialvl[0] > player_stats[0] and mia.mialvl[1] >player_stats[1] and mia.mialvl[2] > player_stats[2]:
+                print("You can not play Mia's story if your stats are too low!")
+            else: gamemenu()
+        characterselector()
+    
+    elif gamechoice == "5":
+        def savestate():
+            print(f"you can continue {story_list}'s story")
+            savechoice1 = input("Which story do you want to continue? ")
+            if savechoice1 not in story_list:
+                print("You cannot continue this story")
+                savestate()
+            else:
+                print("where do you want to continue?")
+                print(getmembers(mia, isfunction))
+        savestate()
