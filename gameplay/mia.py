@@ -13,18 +13,14 @@ def miaintro():
     miacontinue = input("Do you wanna continue Mia's story, if so type yes\n ")
     if miacontinue == "yes":
         sleep(5)
-        miaFirstStory()
+        print(ms.MiaStory1)
+        sleep(5)
         miacontinue = input("Do you wanna continue Mia's story, if so type yes\n ")
         if miacontinue == "yes":
             sleep(2)
             miaSecondStory()
     else:
         gamemenu()
-
-def miaFirstStory():
-    print(ms.MiaStory1)
-    sleep(5)
-    miaSecondStory()
 
 def miaSecondStory():
     print(ms.MiaStory2)
