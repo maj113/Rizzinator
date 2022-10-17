@@ -25,10 +25,10 @@ def gamemenu():
     elif gamechoice == "4":
         def characterselector():
             global selected_story
-            print("Select your character")
+            print("\nSelect your character")
             if mia.mialvl[0] <= player_stats[0] and mia.mialvl[1] <= player_stats[1] and mia.mialvl[2] <= player_stats[2]:
-                print("you can pick Mia")
-            selected_story = input("Who are you picking? ")
+                print("\nyou can pick Mia")
+            selected_story = input("\nWho are you picking? ")
             if (selected_story) == ("mia"):
                 story_list.append(selected_story)
                 mia.miaintro() 

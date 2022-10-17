@@ -2,6 +2,8 @@
 from time import sleep
 from random import randint
 
+from misc.mainmenu import gamemenu
+
 
 def gymExcercise():
     print("You packed your gym shorts, protein shake and headed to your local gym.")
@@ -16,6 +18,8 @@ def gymExcercise():
         player_stats[1] = player_stats[1] + excerciseTime
         sleep(excerciseTime)
         print(f"you got closer to being an absolute CHAD, good work chap. Your new stats are")
-    print(player_stats)
+        print(player_stats)
+        gamemenu()
+    
   
 
