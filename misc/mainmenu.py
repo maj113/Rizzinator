@@ -30,8 +30,8 @@ def gamemenu():
                 print("you can pick Mia")
             selected_story = input("Who are you picking? ")
             if (selected_story) == ("mia"):
-                mia.miaintro()
-                story_list.append(F"{selected_story}")
+                story_list.append(selected_story)
+                mia.miaintro() 
             elif mia.mialvl[0] > player_stats[0] and mia.mialvl[1] >player_stats[1] and mia.mialvl[2] > player_stats[2]:
                 print("You can not play Mia's story if your stats are too low!")
             else: gamemenu()
@@ -42,8 +42,10 @@ def gamemenu():
             print(f"you can continue {story_list}'s story")
             savechoice1 = input("Which story do you want to continue? ")
             if savechoice1 not in story_list:
-                print("You cannot continue this story")
-                savestate()
+                menuchoice = input("You cannot continue this story, do you want to go back to the main menu? ")
+                if menuchoice == "yes":
+                    gamemenu()
+                else: savestate()
             else:
-                print("where do you want to continue?")
+                input("where do you want to continue?")
         savestate()
