@@ -1,6 +1,7 @@
 from time import sleep
 from stories import woman_intro as wi, MiaStories as ms
 from misc.mainmenu import gamemenu
+
 def levelneeded():
     global mialvl
     mialvl = [20,20,2]
@@ -14,22 +15,22 @@ def miaintro():
         sleep(5)
         miaFirstStory()
         miacontinue = input("Do you wanna continue Mia's story, if so type yes\n ")
-    if miacontinue == "yes":
-        sleep(2)
-        miaSecondStory()
+        if miacontinue == "yes":
+            sleep(2)
+            miaSecondStory()
     else:
         gamemenu()
 
 def miaFirstStory():
     print(ms.MiaStory1)
     sleep(5)
-    miaSecondStory
+    miaSecondStory()
 
 def miaSecondStory():
     print(ms.MiaStory2)
     sleep(2)
-    print(ms.miaAskOut1, ms.miaAskOut2, ms.miaAskOut3)
-    selectedInteraction = int(input("Which of these three pick up lines do you wish to use on Mia? input numbers 1, 2 or 3 \n"))
+    print(ms.miaAskOut1,"\n", ms.miaAskOut2,"\n", ms.miaAskOut3)
+    selectedInteraction = int(input("\nWhich of these three pick up lines do you wish to use on Mia? input numbers 1, 2 or 3 \n"))
     sleep(2)
     if selectedInteraction == 1:
             print(ms.miaReaction1)
