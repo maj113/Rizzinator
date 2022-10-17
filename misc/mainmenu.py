@@ -4,10 +4,10 @@ from time import sleep
 from misc.gym import gymExcercise
 from misc.plstats import player_stats
 story_list = []
-menuchoices = ("Hit the gym [1]\n ","Exit the game [2]\n"," Check current stats [3]\n"," Play story from beginning [4]\n"," Continue story [5]")
+menuchoices = ("Hit the gym [1]\n ","Exit the game [2]\n"," Check current stats [3]\n"," Play story from beginning [4]\n"," Continue story [5]\n")
 
 def gamemenu():
-    print("What do you want to do:\n " , *menuchoices)
+    print("What do you want to do:\n\n " , *menuchoices,)
     gamechoice = input("Input the number next to the action you want to do ")
     
     if  gamechoice == "1":
