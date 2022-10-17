@@ -1,2 +1,16 @@
 MiaStory1 = 'you are walking down the hallway on your first day of college, when you look behind you and spot one of if not the most beautiful girl you have ever seen, walking behind you. You just can\'t take your eyes off of her and because you are walking with your head turned backwards, you bump into some poor guy who was just minding his buisness. Everything you are holding falls on the ground and you scramble to pick it all up. Suddenly a soft angelic voice asks you "hey, may I help you?" it\'s her! The beautifull tall motherly girl that caused you to drop all of your stuff. you become so flustered that you can\'t answer, watching as she picks your stuff up into a neat pile. "Here you go" she says with a smile on her stunning face. Before you have the chance to say anything she leaves just as the bell rings.\n'
 MiaStory2 = "While in class, you are constantly thinking about the interaction you had with that beautiful girl in the hallway. You are so distracted by the taught of her, that you don't even notice the professor staring at you. After about five minutes of waiting the shouts \"{player}!!!\" but you don't notice him shouting, not even a bit. The professor comes up to you, and leans in very close to your face. \"wakey wakey!\" you snap out of your fantasies and become very flustered \"s- sorry Mr-\" too late the professor is already pointing toward the door signifying that you must leave the classroom. You leave your desk with great shame. You sit down on the bench right of the door and look around for a second. You see someone walking on the other side of the hall... w- wait is that her? It's that girl from before, the cause of your fantasies. In a moment of what seems to be pure insanity you decide \"fuck it! Imma ask her out!\" you stand up and head on over to her."
+
+miaAskOut1 = "H- hi, you're really beautiful, c- could I get your snap?"
+
+miaAskOut2 = "H- hi... umm ugh... I- I umm... you get flustered so you decide to write your thoughts on your phones notepad* \"you look really beautiful\" :)"
+
+miaAskOut3 = "H- hi... nggh... h- huge m... milkers. "
+
+miaReaction1 = "haha ^-^ thank you! Sure cutie here's my snap *shows you the phone*"
+miaRejection1 = "thank you, but I'm not looking for boys rn"
+
+miaReaction2 = "hihi ^-^ take your time cutie."
+miaRejection2 = "thank you, but I'm not looking for boys rn"
+
+miaReaction3 = "WHAT THE- go away creep"

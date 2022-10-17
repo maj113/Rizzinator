@@ -16,20 +16,31 @@ def miaintro():
     else:
         gamemenu()
 
-def miaStory2():
-    miacontinue = input("Do you wanna continue Mia's story, if so type yes\n ")
-    if miacontinue == "yes":
-        sleep(2)
-        miaSecondStory()
-    else:
-       gamemenu() 
-
-
 def miaFirstStory():
     print(ms.MiaStory1)
     sleep(10)
+    miaSecondStory
 
 def miaSecondStory():
+    miacontinue = input("Do you wanna continue Mia's story, if so type yes\n ")
+    if miacontinue == "yes":
+        sleep(2)
     print(ms.MiaStory2)
-    gamemenu()
-    sleep(10)
+    sleep(2)
+    selectedInteraction = int(input("Which of these three pick up lines do you wish to use on Mia? input numbers 1, 2 or 3"))
+    print(ms.miaAskOut1, ms.miaAskOut2, ms.miaAskOut3)
+    if selectedInteraction == 1:
+            print(ms.miaReaction1)
+        
+    elif selectedInteraction == 2:
+            print(ms.miaReaction2)
+        
+    elif selectedInteraction == 3:
+            print(ms.miaReaction3)
+        
+    elif selectedInteraction > 4:
+            print("BRO 4 AND ABOVE WASN'T AN OPTION!!!")
+    
+    
+
+
