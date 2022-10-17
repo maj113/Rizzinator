@@ -8,27 +8,29 @@ def levelneeded():
 
 def miaintro():
     print(wi.miaIntr)
-    sleep(10)
+    sleep(5)
     miacontinue = input("Do you wanna continue Mia's story, if so type yes\n ")
     if miacontinue == "yes":
         sleep(5)
         miaFirstStory()
+        miacontinue = input("Do you wanna continue Mia's story, if so type yes\n ")
+    if miacontinue == "yes":
+        sleep(2)
+        miaSecondStory()
     else:
         gamemenu()
 
 def miaFirstStory():
     print(ms.MiaStory1)
-    sleep(10)
+    sleep(5)
     miaSecondStory
 
 def miaSecondStory():
-    miacontinue = input("Do you wanna continue Mia's story, if so type yes\n ")
-    if miacontinue == "yes":
-        sleep(2)
     print(ms.MiaStory2)
     sleep(2)
-    selectedInteraction = int(input("Which of these three pick up lines do you wish to use on Mia? input numbers 1, 2 or 3"))
     print(ms.miaAskOut1, ms.miaAskOut2, ms.miaAskOut3)
+    selectedInteraction = int(input("Which of these three pick up lines do you wish to use on Mia? input numbers 1, 2 or 3 \n"))
+    sleep(2)
     if selectedInteraction == 1:
             print(ms.miaReaction1)
         
@@ -40,6 +42,7 @@ def miaSecondStory():
         
     elif selectedInteraction > 4:
             print("BRO 4 AND ABOVE WASN'T AN OPTION!!!")
+            gamemenu()
     
     
 
