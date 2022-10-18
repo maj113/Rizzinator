@@ -3,7 +3,8 @@ from gameplay import mia
 from time import sleep
 from misc.gym import gymExcercise
 from misc.plstats import player_stats
-menuchoices = ("Hit the gym [1]\n ","Exit the game [2]\n"," Check current stats [3]\n"," Play story from beginning [4]\n"," Continue story [5]\n")
+story_list = []
+menuchoices = ("Play story from beginning [1]\n"," Continue story [2]\n"," Hit the gym [3]\n ","Check current stats [4]\n"," Exit the game [5]\n")
 
 def slow_print(s, speed = 5):
     for c in s:
@@ -18,18 +19,18 @@ def gamemenu():
    
     gamechoice = input("Input the number next to the action you want to do ")
     
-    if  gamechoice == "1":
+    if  gamechoice == "3":
         gymExcercise()
     
-    elif gamechoice == "2":
+    elif gamechoice == "5":
         print("Aight go touch grass")
         exit()
 
-    elif gamechoice == "3":
+    elif gamechoice == "4":
         print("Looks= ",player_stats[0],"Jacked= ",player_stats[0],"Attraction= ",player_stats[0])
         sleep(5)
         
-    elif gamechoice == "4":
+    elif gamechoice == "1":
         def characterselector():
             global story_list
             global selected_story
@@ -46,7 +47,7 @@ def gamemenu():
             else: gamemenu()
         characterselector()
     
-    elif gamechoice == "5":
+    elif gamechoice == "2":
         def savestate():
             print(story_list)
             print(f"you can continue {story_list}'s story")
