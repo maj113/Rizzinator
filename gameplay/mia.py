@@ -39,7 +39,7 @@ def miaSecondStory():
     elif selectedInteraction == 3:
             print(ms.miaReaction3)
         
-    elif selectedInteraction > 4:
+    elif selectedInteraction >= 4:
             print("BRO 4 AND ABOVE WASN'T AN OPTION!!!")
             gamemenu()
 

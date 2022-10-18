@@ -11,7 +11,6 @@ def gamemenu():
     gamechoice = input("Input the number next to the action you want to do ")
     
     if  gamechoice == "1":
-        player_stats[1] = (player_stats[1]+randint(0,2))
         gymExcercise()
     
     elif gamechoice == "2":
