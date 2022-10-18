@@ -15,7 +15,7 @@ print("\nYour current stats are: \n\n","Looks =",player_stats[0],"\n Jacked =",p
 sleep(2)
 mia.levelneeded()
 if mia.mialvl[0] <= player_stats[0] and mia.mialvl[1] <= player_stats[1] and mia.mialvl[2] <= player_stats[2]:
-    print("you can pick Mia")
+    mm.slow_print("you can pick Mia")
     sleep(2)
     mm.gamemenu()
 else: 
