@@ -17,7 +17,7 @@ def gymExcercise():
     else:
         player_stats[1] = player_stats[1] + excerciseTime
         for l in range(excerciseTime-1):
-            print("💪")
+            print("💪", flush = True)
             sleep(1)
         print()
         sleep(excerciseTime)

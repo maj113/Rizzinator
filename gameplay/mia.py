@@ -4,7 +4,7 @@ from misc.mainmenu import gamemenu
 
 def levelneeded():
     global mialvl
-    mialvl = [100,100,2]
+    mialvl = [10,10,2]
     return(mialvl)
 
 def miaintro():
