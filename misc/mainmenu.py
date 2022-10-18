@@ -1,10 +1,16 @@
-from random import randint
+from random import uniform
 from gameplay import mia
 from time import sleep
 from misc.gym import gymExcercise
 from misc.plstats import player_stats
 story_list = []
 menuchoices = ("Hit the gym [1]\n ","Exit the game [2]\n"," Check current stats [3]\n"," Play story from beginning [4]\n"," Continue story [5]\n")
+
+def slow_print(s, speed = 5):
+    for c in s:
+        print(c,end="")
+        sleep(uniform(0.05, 0.2)*(1/speed))
+    print()
 
 def gamemenu():
     print("What do you want to do:\n\n " , *menuchoices,)
