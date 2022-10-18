@@ -16,6 +16,10 @@ def gymExcercise():
         gymExcercise()
     else:
         player_stats[1] = player_stats[1] + excerciseTime
+        for l in range(excerciseTime-1):
+            print("💪")
+            sleep(1)
+        print()
         sleep(excerciseTime)
         print("\nyou got closer to being an absolute CHAD, good work chap. Your new stats are\n")
         print("\nYour current stats are: \n\n","Looks=",player_stats[0],"\n Jacked=",player_stats[1],"\n Attraction=",player_stats[2],"\n")
