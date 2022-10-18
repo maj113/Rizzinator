@@ -19,6 +19,8 @@ def miaintro():
         if miacontinue == "yes":
             sleep(2)
             miaSecondStory()
+        else:
+                gamemenu()
     else:
         gamemenu()
 
@@ -40,7 +42,7 @@ def miaSecondStory():
     elif selectedInteraction > 4:
             print("BRO 4 AND ABOVE WASN'T AN OPTION!!!")
             gamemenu()
-    
+
     
 
 

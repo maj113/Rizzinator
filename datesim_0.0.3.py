@@ -1,4 +1,4 @@
-#Rizzsim_0.0.3
+#Rizzsim Aplha release 1
 #KrpanKodingKompany, All rights reserved 2022
 from stories import woman_intro as wi, MiaStories as ms
 from time import sleep
@@ -24,10 +24,8 @@ sleep(5)
 
 
 
-
-
 """
 Credits:
-Maj - Lead programmer, spell checker
-Gorazd - Lead Writer, code review, idea provider
+Maj - Lead programmer
+Gorazd - Lead Writer, programmer, idea provider
 """
