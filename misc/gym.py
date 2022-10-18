@@ -3,8 +3,6 @@ from time import sleep
 from random import randint
 
 
-
-
 def gymExcercise():
     from misc.mainmenu import gamemenu
     from misc.plstats import player_stats
