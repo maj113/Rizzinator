@@ -4,7 +4,7 @@ from time import sleep
 from misc.gym import gymExcercise
 from misc.plstats import player_stats
 story_list = []
-menuchoices = ("Play story from beginning [1]\n"," Continue story [2]\n"," Hit the gym [3]\n ","Check current stats [4]\n"," Exit the game [5]\n")
+menuchoices = ("  Play story from beginning [1]\n"," Continue story [2]\n"," Hit the gym [3]\n ","Check current stats [4]\n"," Exit the game [5]\n")
 
 def slow_print(s, speed = 5):
     for c in s:
@@ -15,15 +15,15 @@ def slow_print(s, speed = 5):
 
 def gamemenu():
     
-    print("What do you want to do:\n\n " , *menuchoices,)
-   
+    slow_print("What do you want to do:\n " , speed=4)
+    print(*menuchoices)
     gamechoice = input("Input the number next to the action you want to do ")
     
     if  gamechoice == "3":
         gymExcercise()
     
     elif gamechoice == "5":
-        print("Aight go touch grass")
+        slow_print("Aight go touch grass\n", speed=4)
         exit()
 
     elif gamechoice == "4":
