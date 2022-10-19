@@ -14,3 +14,17 @@ miaReaction2 = "hihi ^-^ take your time cutie.\n"
 miaRejection2 = "thank you, but I'm not looking for boys rn\n"
 
 miaReaction3 = "WHAT THE- go away creep"
+
+MiaStory3 = "Mia added you on snap, and after sending your first snaps you immediately hit it off. You snapped for hours and agreed to meet up in the nearby park on Saturday. After you both said goodnight, your brain could only think about her. However, the amount of brainpower you dedicate to that little crush of yours has become concerning. It's taken a toll on your school performance. And you forgot to study for your math test. Not only that, but you also couldn't think of anything else other than her for the duration of the exam. It got so bad, that you wrote \"Mia\" as your name and class. The professor sent you to the principal's office to explain yourself. Thankfully the principal dismissed your stupidity as \"boys will be boys.\"  Saturday rolls around, and you nervously head to the town's small park. You spot god's favorite sitting on a park bench near a pond, bathed in rays of sunlight. She spots you and starts waving with a warm smile on her face. The closer you get to her, the redder your face gets. \"Heyyy ^-^\"\n"
+miaAns1 = "Hey Mia :) Y- you're looking good today *dumbass smile*\n "
+miaAns2 = "H- hello... h- how are you to- today?\n "
+miaAns3 = "WSG BICH\n"
+
+miaReact1 = "Thank youuu hihihi ^-^ You too. So, what's up\n"
+miaReact2 = "I'm good ^-^ how about you?\n"
+miaReact3 = "Umm... wtf... what's wrong with you? I thought you were a cool guy *leaves*\n"
+
+
+
+
+
