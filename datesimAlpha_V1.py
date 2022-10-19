@@ -4,11 +4,9 @@ from stories import woman_intro as wi, MiaStories as ms
 from time import sleep
 from gameplay import mia
 import misc.mainmenu as mm 
-from misc.plstats import player_stats
+from misc.plstats import player_stats, playername
 #woman_list = ["Mia", "Emma", "Lana", "Jane", "Jenny", "Anna", "Mimi", "Lina", "Anya"]
-
-    
-player = input(str("what is your name? "))
+playername()
 mm.slow_print("\nYour current stats are: \n", speed=4)
 print("Looks =",player_stats[0],"\nJacked =",player_stats[1],"\nAttraction =",player_stats[2],"\n")
 sleep(0.5)

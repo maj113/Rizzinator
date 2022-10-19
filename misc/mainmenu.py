@@ -17,8 +17,8 @@ def gamemenu():
     
     slow_print("What do you want to do:\n " , speed=4)
     print(*menuchoices)
-    gamechoice = input("Input the number next to the action you want to do ")
-    
+    slow_print("Input the number next to the action you want to do ",speed=6)
+    gamechoice = input().lower().strip()
     if  gamechoice == "3":
         gymExcercise()
     
@@ -27,29 +27,29 @@ def gamemenu():
         exit()
 
     elif gamechoice == "4":
-        print("Looks= ",player_stats[0],"Jacked= ",player_stats[0],"Attraction= ",player_stats[0])
+        statsin = ("Looks= ",player_stats[0],"Jacked= ",player_stats[0],"Attraction= ",player_stats[0])
+        slow_print(statsin, speed=4)
         sleep(5)
         
     elif gamechoice == "1":
         def characterselector():
             global story_list
             global selected_story
-            print("\nSelect your character")
+            slow_print("\nSelect your character", speed=4)
             if mia.mialvl[0] <= player_stats[0] and mia.mialvl[1] <= player_stats[1] and mia.mialvl[2] <= player_stats[2]:
-                print("\nyou can pick Mia")
+                slow_print("\nyou can pick Mia", speed=4)
             selected_story = input("\nWho are you picking? ").lower().strip()
             if (selected_story) == ("mia"):
                 story_list = selected_story
                 print(story_list)
                 mia.miaintro() 
             elif mia.mialvl[0] > player_stats[0] and mia.mialvl[1] >player_stats[1] and mia.mialvl[2] > player_stats[2]:
-                print("You can not play Mia's story if your stats are too low!")
+                slow_print("You can not play Mia's story if your stats are too low!", speed=4)
             else: gamemenu()
         characterselector()
     
     elif gamechoice == "2":
         def savestate():
-            print(story_list)
             print(f"you can continue {story_list}'s story")
             savechoice1 = input("Which story do you want to continue? ")
             if savechoice1 not in story_list:
@@ -61,3 +61,6 @@ def gamemenu():
                 input("where do you want to continue?")
 
         savestate()
+    else: 
+        slow_print("Thats not an option", speed=4)
+        gamemenu()
