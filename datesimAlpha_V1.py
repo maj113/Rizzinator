@@ -15,7 +15,7 @@ if mia.mialvl[0] <= player_stats[0] and mia.mialvl[1] <= player_stats[1] and mia
     mm.slow_print("you can pick Mia\n")
     mm.gamemenu()
 else: 
-    mm.slow_print("your stats are too low, you can get better stats in the menu.")
+    mm.slow_print("your stats are too low, you can get better stats in the menu.\n")
     mm.gamemenu()
 sleep(5)
 
