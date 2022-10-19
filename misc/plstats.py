@@ -2,9 +2,9 @@ from random import randint
 
 #this will randomize Player_stats
 def playername():
-    global test
+    global PlayerName
     player = input(str("what is your name? "))
-    test = player
+    PlayerName = player
     
 
 def stats1():
