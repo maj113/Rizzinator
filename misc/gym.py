@@ -7,7 +7,7 @@ def gymExcercise():
     from misc.mainmenu import gamemenu, slow_print
     from misc.plstats import player_stats
     slow_print("\nYou packed your gym shorts, protein shake and headed to your local gym.")
-    print("\nYour current jacked stat is:",player_stats[1],"\n")
+    print("\nYour current jacked stat is:",player_stats[1])
     excerciseTime = int(input("\nhow long do you wish to excercise for? Use seconds: "))
     if excerciseTime > 20:
         slow_print("\nyou can not excercise for more than 20 seconds!", speed=4)

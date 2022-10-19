@@ -27,9 +27,10 @@ def gamemenu():
         exit()
 
     elif gamechoice == "4":
-        statsin = ("Looks= ",player_stats[0],"Jacked= ",player_stats[0],"Attraction= ",player_stats[0])
-        slow_print(statsin, speed=4)
-        sleep(5)
+        print("Looks =",player_stats[0],"\nJacked =",player_stats[1],"\nAttraction =",player_stats[2],"\n")
+        sleep(1.5)
+        gamemenu()
+       
         
     elif gamechoice == "1":
         def characterselector():
