@@ -4,7 +4,7 @@ from gameplay import mia
 from time import sleep
 from misc.gym import gymExcercise
 from misc.plstats import player_stats, stats1
-from misc.goodlokin import goingToShop
+from misc.goodlookin import goingToShop
 story_list = []
 menuchoices = ("  Play story from beginning [1]\n"," Continue story [2]\n"," Increase stats [3]\n ","Check current stats [4]\n"," Exit the game [5]\n")
 statsmenu = ["  Hit the gym [1]\n"," Buy perfume [2]\n"," Go back [3]\n"]
