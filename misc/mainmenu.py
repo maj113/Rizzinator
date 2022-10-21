@@ -1,10 +1,28 @@
+import imp
 from random import uniform
 from gameplay import mia
 from time import sleep
 from misc.gym import gymExcercise
-from misc.plstats import player_stats
+from misc.plstats import player_stats, stats1
+from misc.goodlokin import goingToShop
 story_list = []
-menuchoices = ("  Play story from beginning [1]\n"," Continue story [2]\n"," Hit the gym [3]\n ","Check current stats [4]\n"," Exit the game [5]\n")
+menuchoices = ("  Play story from beginning [1]\n"," Continue story [2]\n"," Increase stats [3]\n ","Check current stats [4]\n"," Exit the game [5]\n")
+statsmenu = ["  Hit the gym [1]\n"," Buy perfume [2]\n"," Go back [3]\n"]
+
+def statsincreasemenu():
+    slow_print("What do you want to do:\n " , speed=4)
+    print(*statsmenu)
+    slow_print("Input the number next to the action you want to do ",speed=5)
+    statschoice = input().lower().strip()
+
+    if statschoice == "1":
+        gymExcercise()
+    
+    elif statschoice == "2":
+        goingToShop()
+    
+    elif statschoice == "3": 
+        gamemenu()
 
 def slow_print(s, speed = 5):
     for c in s:
@@ -19,8 +37,9 @@ def gamemenu():
     print(*menuchoices)
     slow_print("Input the number next to the action you want to do ",speed=6)
     gamechoice = input().lower().strip()
+    
     if  gamechoice == "3":
-        gymExcercise()
+        statsincreasemenu()
     
     elif gamechoice == "5":
         slow_print("Aight go touch grass\n", speed=4)
