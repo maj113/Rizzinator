@@ -56,17 +56,17 @@ def gamemenu():
         def characterselector():
             global story_list
             global selected_story
-            slow_print("\nSelect your character", speed=4)
+            slow_print("\nSelect your character: ", speed=4)
             if Mia.mialvl[0] <= player_stats[0] and Mia.mialvl[1] <= player_stats[1] and Mia.mialvl[2] <= player_stats[2]:
                 slow_print("\nyou can pick Mia", speed=4)
             selected_story = input("\nWho are you picking? ").lower().strip()
-            if (selected_story) == ("mia"):
+            if (selected_story) == ("mia") and Mia.mialvl[0] <= player_stats[0] and Mia.mialvl[1] <= player_stats[1] and Mia.mialvl[2] <= player_stats[2]:
                 story_list = selected_story
-                print(story_list)
                 Mia.miaintro() 
-            elif Mia.mialvl[0] > player_stats[0] and Mia.mialvl[1] >player_stats[1] and Mia.mialvl[2] > player_stats[2]:
-                slow_print("You can not play Mia's story if your stats are too low!", speed=4)
-            else: gamemenu()
+            else: 
+                slow_print(f"\nYou cannot select {selected_story}\n   ",speed=4)
+                gamemenu()
+        
         characterselector()
     
     elif gamechoice == "2":
