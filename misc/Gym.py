@@ -1,6 +1,6 @@
 #random comment cause this is what devs do... right?
 from time import sleep
-from random import randint
+
 
 
 def gymExcercise():
@@ -13,6 +13,7 @@ def gymExcercise():
         slow_print("\nyou can not excercise for more than 20 seconds!", speed=4)
         gymExcercise()
     else:
+        #this needs to be improved, @Gorchii please improve 
         player_stats[1] = player_stats[1] + excerciseTime
         for l in range(excerciseTime):
             print("💪 ", flush = True,end="")
