@@ -15,6 +15,7 @@ def loadsave():
         slow_print("Where do you want to continue? ")
         print(*miasaves,"\n")
         selsave = input().strip()
+        print("\033[A                             \033[A") 
         if selsave in miasaves and "intro":
             miaintro()
         elif selsave in miasaves and "1st story":
