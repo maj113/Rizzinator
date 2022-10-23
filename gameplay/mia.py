@@ -1,6 +1,6 @@
 from time import sleep
 from stories import MiaStories as ms
-from misc.mainmenu import gamemenu, slow_print
+from misc.MainMenu import gamemenu, slow_print
 
 def levelneeded():
     global mialvl

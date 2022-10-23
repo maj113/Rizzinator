@@ -1,14 +1,14 @@
 #coment cuz python dev :sunglasses:
 from time import sleep
-from misc.plstats import player_stats
+from misc.PLStats import player_stats
 maxusagevar = [1]
 def maxusage():
     maxusagevar[0] = maxusagevar[0] + 1
 
 def goingToShop():
+    from misc.MainMenu import slow_print, gamemenu   
     if maxusagevar[0] <= 3:
         maxusage()
-        from misc.mainmenu import slow_print, gamemenu 
         slow_print("You go shopping for perfume") 
         perfumes = ["\nChallen", "Bugo Hoss", "Rakija", "Juzza"]
         print(*perfumes)
@@ -40,4 +40,4 @@ def goingToShop():
             gamemenu()
     else:
         print("You applied so much perfume that everyone in your vicinity dropped like a fly. You were promptly escorted out of the shop.")
-        exit()
+        gamemenu()

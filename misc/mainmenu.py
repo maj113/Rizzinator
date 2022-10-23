@@ -1,10 +1,10 @@
 import imp
 from random import uniform
-from gameplay import mia
+from gameplay import Mia
 from time import sleep
-from misc.gym import gymExcercise
-from misc.plstats import player_stats, stats1
-from misc.goodlookin import goingToShop
+from misc.Gym import gymExcercise
+from misc.PLStats import player_stats, stats1
+from misc.PerfumeShop import goingToShop
 story_list = []
 menuchoices = ("  Play story from beginning [1]\n"," Continue story [2]\n"," Increase stats [3]\n ","Check current stats [4]\n"," Exit the game [5]\n")
 statsmenu = ["  Hit the gym [1]\n"," Buy perfume [2]\n"," Go back [3]\n"]
@@ -56,14 +56,14 @@ def gamemenu():
             global story_list
             global selected_story
             slow_print("\nSelect your character", speed=4)
-            if mia.mialvl[0] <= player_stats[0] and mia.mialvl[1] <= player_stats[1] and mia.mialvl[2] <= player_stats[2]:
+            if Mia.mialvl[0] <= player_stats[0] and Mia.mialvl[1] <= player_stats[1] and Mia.mialvl[2] <= player_stats[2]:
                 slow_print("\nyou can pick Mia", speed=4)
             selected_story = input("\nWho are you picking? ").lower().strip()
             if (selected_story) == ("mia"):
                 story_list = selected_story
                 print(story_list)
-                mia.miaintro() 
-            elif mia.mialvl[0] > player_stats[0] and mia.mialvl[1] >player_stats[1] and mia.mialvl[2] > player_stats[2]:
+                Mia.miaintro() 
+            elif Mia.mialvl[0] > player_stats[0] and Mia.mialvl[1] >player_stats[1] and Mia.mialvl[2] > player_stats[2]:
                 slow_print("You can not play Mia's story if your stats are too low!", speed=4)
             else: gamemenu()
         characterselector()
