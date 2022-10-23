@@ -1,7 +1,3 @@
-from json import load
-from tkinter.messagebox import YES
-
-
 def loadsave():
     from misc.MainMenu import story_list, slow_print, gamemenu
     from gameplay.Mia import miasaves, miaintro, miaFirstStory, miaSecondStory
@@ -16,7 +12,7 @@ def loadsave():
         slow_print("\nWhere do you want to continue? ")
         print(*miasaves)
         selsave = input().strip().lower
-        if selsave in miasaves and "Intro":
+        if selsave in miasaves and "intro":
             miaintro()
         elif selsave in miasaves and "1st story":
             miaFirstStory()

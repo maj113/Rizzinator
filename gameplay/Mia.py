@@ -7,11 +7,11 @@ miasaves = []
 def miaintro():
     slow_print(ms.miaIntr,speed=8)
     sleep(2)
-    miasaves.append("Intro")
+    miasaves.append("intro")
     miacontinue = input("Do you wanna continue Mia's story, if so type yes\n ")
     if miacontinue == "yes":
         miaFirstStory()
-
+    else: gamemenu()
 
 
 def miaFirstStory():
@@ -22,8 +22,8 @@ def miaFirstStory():
     miacontinue = input("Do you wanna continue Mia's story, if so type yes\n ")
     if miacontinue == "yes":
         miaSecondStory()     
-    else:
-        gamemenu()
+    else: gamemenu()
+        
           
 def miaSecondStory():
     slow_print(ms.MiaStory2,speed=8)
