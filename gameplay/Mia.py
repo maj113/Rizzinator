@@ -1,12 +1,12 @@
 from time import sleep
 from stories import MiaStories as ms
 from misc.MainMenu import gamemenu, slow_print
-
+#why is this a function again? 
 def levelneeded():
     global mialvl
     mialvl = [20,25,2]
     return(mialvl)
-
+#miaintro() needs to be refined, as-is saving in impossible.
 def miaintro():
     slow_print(ms.miaIntr)
     sleep(2)
