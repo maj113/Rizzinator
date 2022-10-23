@@ -1,10 +1,10 @@
 #Rizzsim Aplha release 1
 #KrpanKodingKompany, All rights reserved 2022
-from stories import WomanIntro as wi, MiaStories as ms
 from time import sleep
 from gameplay import Mia
 import misc.MainMenu as mm 
 from misc.PLStats import player_stats, playername
+#only using Mia for now since other dont have stories yet, not sure how this even scales with multiple. @gorchii wanna implement?
 #woman_list = ["Mia", "Emma", "Lana", "Jane", "Jenny", "Anna", "Mimi", "Lina", "Anya"]
 playername()
 mm.slow_print("\nYour current stats are: \n", speed=4)
@@ -22,8 +22,7 @@ sleep(5)
 
 
 
-"""
-Credits:
-Maj - Lead programmer
-Gorazd - Lead Writer, programmer, idea provider
-"""
+
+#Credits:
+#Maj - Lead programmer
+#Gorazd - Lead Writer, programmer, idea provider

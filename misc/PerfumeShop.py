@@ -2,6 +2,7 @@
 from time import sleep
 from misc.PLStats import player_stats
 maxusagevar = [1]
+#this will count to 3 and then tell goingtoshop() to stop increasing the attraction stat
 def maxusage():
     maxusagevar[0] = maxusagevar[0] + 1
 
@@ -13,11 +14,11 @@ def goingToShop():
         perfumes = ["\nChallen", "Bugo Hoss", "Rakija", "Juzza"]
         print(*perfumes)
         perfume_picked = input("\nWhich one of these perfumes do you wish to purchase? ").lower().strip()
-
+        #the way it prints out perfumes is confusing 
         if perfume_picked == "challen":
             sleep(1)
-            player_stats[2] = player_stats[2] + 1 #to zih ne dela 
-            slow_print(f"\nYou did a little perfume testing, and decided to pick \"Challen\". Your attraction stat is now: {player_stats[2]}") #only god knows if this works :skull:
+            player_stats[2] = player_stats[2] + 1 
+            slow_print(f"\nYou did a little perfume testing, and decided to pick \"Challen\". Your attraction stat is now: {player_stats[2]}") 
             gamemenu()
         elif perfume_picked == "bugo hoss":
             sleep(1)
