@@ -1,7 +1,7 @@
 #Rizzsim Aplha release 1
 #KrpanKodingKompany, All rights reserved 2022
 from time import sleep
-from gameplay import Mia
+from gameplay.Mia import mialvl
 import misc.MainMenu as mm 
 from misc.PLStats import player_stats, playername
 #only using Mia for now since other dont have stories yet, not sure how this even scales with multiple. @gorchii wanna implement?
@@ -10,7 +10,7 @@ playername()
 mm.slow_print("\nYour current stats are: \n", speed=4)
 print("Looks =",player_stats[0],"\nJacked =",player_stats[1],"\nAttraction =",player_stats[2],"\n")
 sleep(0.5)
-if Mia.mialvl[0] <= player_stats[0] and Mia.mialvl[1] <= player_stats[1] and Mia.mialvl[2] <= player_stats[2]:
+if mialvl[0] <= player_stats[0] and mialvl[1] <= player_stats[1] and mialvl[2] <= player_stats[2]:
     mm.slow_print("you can pick Mia\n")
     mm.gamemenu()
 else: 
