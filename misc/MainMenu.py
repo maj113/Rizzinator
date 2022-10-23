@@ -5,6 +5,7 @@ from time import sleep
 from misc.Gym import gymExcercise
 from misc.PLStats import player_stats, stats1
 from misc.PerfumeShop import goingToShop
+from misc.saveselect import loadsave
 story_list = []
 menuchoices = ("  Play story from beginning [1]\n"," Continue story [2]\n"," Increase stats [3]\n ","Check current stats [4]\n"," Exit the game [5]\n")
 statsmenu = ["  Hit the gym [1]\n"," Buy perfume [2]\n"," Go back [3]\n"]
@@ -69,18 +70,9 @@ def gamemenu():
         characterselector()
     
     elif gamechoice == "2":
-        def savestate():
-            print(f"you can continue {story_list}'s story")
-            savechoice1 = input("Which story do you want to continue? ")
-            if savechoice1 not in story_list:
-                menuchoice = input("You cannot continue this story, do you want to go back to the main menu? ")
-                if menuchoice == "yes":
-                    gamemenu()
-                else: savestate()
-            else:
-                input("where do you want to continue?")
+        loadsave()
 
-        savestate()
+        
     else: 
         slow_print("Thats not an option", speed=4)
         gamemenu()
