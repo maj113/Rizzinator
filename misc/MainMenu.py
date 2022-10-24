@@ -5,6 +5,7 @@ from time import sleep
 from misc.Gym import gymExcercise
 from misc.PLStats import player_stats, stats1
 from misc.PerfumeShop import goingToShop
+from misc.saveselect import loadsave
 story_list = []
 menuchoices = ("  Play story from beginning [1]\n"," Continue story [2]\n"," Increase stats [3]\n ","Check current stats [4]\n"," Exit the game [5]\n")
 statsmenu = ["  Hit the gym [1]\n"," Buy perfume [2]\n"," Go back [3]\n"]
@@ -55,32 +56,23 @@ def gamemenu():
         def characterselector():
             global story_list
             global selected_story
-            slow_print("\nSelect your character", speed=4)
+            slow_print("\nSelect your character: ", speed=4)
             if Mia.mialvl[0] <= player_stats[0] and Mia.mialvl[1] <= player_stats[1] and Mia.mialvl[2] <= player_stats[2]:
                 slow_print("\nyou can pick Mia", speed=4)
             selected_story = input("\nWho are you picking? ").lower().strip()
-            if (selected_story) == ("mia"):
+            if (selected_story) == ("mia") and Mia.mialvl[0] <= player_stats[0] and Mia.mialvl[1] <= player_stats[1] and Mia.mialvl[2] <= player_stats[2]:
                 story_list = selected_story
-                print(story_list)
                 Mia.miaintro() 
-            elif Mia.mialvl[0] > player_stats[0] and Mia.mialvl[1] >player_stats[1] and Mia.mialvl[2] > player_stats[2]:
-                slow_print("You can not play Mia's story if your stats are too low!", speed=4)
-            else: gamemenu()
+            else: 
+                slow_print(f"\nYou cannot select {selected_story}\n   ",speed=4)
+                gamemenu()
+        
         characterselector()
     
     elif gamechoice == "2":
-        def savestate():
-            print(f"you can continue {story_list}'s story")
-            savechoice1 = input("Which story do you want to continue? ")
-            if savechoice1 not in story_list:
-                menuchoice = input("You cannot continue this story, do you want to go back to the main menu? ")
-                if menuchoice == "yes":
-                    gamemenu()
-                else: savestate()
-            else:
-                input("where do you want to continue?")
+        loadsave()
 
-        savestate()
+        
     else: 
         slow_print("Thats not an option", speed=4)
         gamemenu()

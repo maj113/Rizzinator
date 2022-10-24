@@ -1,6 +1,7 @@
 #Rizzsim Aplha release 1
 #KrpanKodingKompany, All rights reserved 2022
 from time import sleep
+from tokenize import maybe
 from gameplay.Mia import mialvl
 import misc.MainMenu as mm 
 from misc.PLStats import player_stats, playername
@@ -17,7 +18,6 @@ else:
     mm.slow_print("your stats are too low, you can get better stats in the menu.\n")
     mm.gamemenu()
 sleep(5)
-
 
 
 
