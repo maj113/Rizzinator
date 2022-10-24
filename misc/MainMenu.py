@@ -1,9 +1,8 @@
-import imp
 from random import uniform
 from gameplay import Mia
 from time import sleep
 from misc.Gym import gymExcercise
-from misc.PLStats import player_stats, stats1
+from misc.PLStats import player_stats
 from misc.PerfumeShop import goingToShop
 from misc.saveselect import loadsave
 story_list = []
@@ -29,7 +28,7 @@ def slow_print(s, speed = 5):
     for c in s:
         print(c, end="", flush = True)
         sleep(uniform(0.1,0.25)*(1/speed))
-    sleep(1)
+    sleep(0.5)
     print()
 
 def gamemenu():
@@ -48,7 +47,7 @@ def gamemenu():
 
     elif gamechoice == "4":
         print("Looks =",player_stats[0],"\nJacked =",player_stats[1],"\nAttraction =",player_stats[2],"\n")
-        sleep(1)
+        sleep(1.5)
         gamemenu()
        
         
