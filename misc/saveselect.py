@@ -1,6 +1,6 @@
 from time import sleep
 
-
+#needs work @Gorchii please test for the love of god 
 def loadsave():
     from misc.MainMenu import story_list, slow_print, gamemenu
     from gameplay.Mia import miasaves, miaintro, miaFirstStory, miaSecondStory
@@ -15,7 +15,7 @@ def loadsave():
         slow_print("Where do you want to continue? ")
         print(*miasaves,"\n")
         selsave = input().strip()
-        print("\033[A                             \033[A") 
+        print("\033[A                             \033[A","\033[A                             \033[A") 
         if selsave in miasaves and "intro":
             miaintro()
         elif selsave in miasaves and "1st story":
@@ -23,6 +23,6 @@ def loadsave():
         elif selsave in miasaves and "2nd story":
             miaSecondStory()
         else: 
-            slow_print(f"You can't continue from {selsave}\n")
+            slow_print(f"\nYou can't continue from {selsave}\n")
             sleep(1)
             gamemenu()
