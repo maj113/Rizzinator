@@ -1,10 +1,32 @@
 #so good looking much suit and pants
 from time import sleep
-from misc.MainMenu import slow_print, gamemenu
-from misc.PLStats import player_stats
+
+
+
+def clothesShoping():
+    from misc.PLStats import player_stats, PlayerName
+    from misc.MainMenu import slow_print, gamemenu
+    slow_print("\n\"A real man needs a good looking outfit\" you think to yourself while walking to the local red cross to pick out some serious drip. \"Hello! how can I help you? The red cross employee asks you.",speed=7)
+    sleep(1)
+    interactionChoice = int(input("\nI would like to acquire some drip m'lady [1]\n" "WHAT ARE YOU DOIN IN MY SWAMP!?!? [2] \n"))
+    print("\033[A                             \033[A")
+    if interactionChoice == 1:
+        pickingClothes()
+
+    elif interactionChoice == 2:
+        slow_print("\n\"GUARDS!!!\" shouts the cashier. Three huge men with sunglasses and black suits escort you from the building.")
+        sleep(1)
+        gamemenu()
+
+    else:
+        slow_print("STOP DEFYING THE GAMES ORDERS YOU- ENOUGH! TO THE MENU WITH YOU!!!")
+        gamemenu()
+
 
 def pickingClothes():
-    slow_print("Ummm... o-kayy? What kind of \"drip\" are you looking for? These are the outfits. \"Cuggi leather jacket", "Suit", "DasAdi sweater and fanny pack", "Lidl outfit\"")
+    from misc.MainMenu import slow_print, gamemenu
+    from misc.PLStats import player_stats, PlayerName
+    slow_print("\nUmmm... o-kayy? What kind of \"drip\" are you looking for? These are the outfits. \"Cuggi leather jacket" "Suit" "DasAdi sweater and fanny pack\" \"Lidl outfit")
     selectedDrip = int(input("Input the the number of the clothing item you wish to select?").strip())
     if selectedDrip == 1:
         sleep(1)
@@ -26,19 +48,4 @@ def pickingClothes():
         slow_print("STOP DEFYING THE GAMES ORDERS YOU- ENOUGH! TO THE MENU WITH YOU!!!")
         gamemenu()
 
-def clothesShoping():
-    slow_print("\n\"A real man needs a good looking outfit\" you think to yourself while walking to the local red cross to pick out some serious drip. \Hello! how can I help you? The red cross employee asks you.")
-    sleep(1)
-    interactionChoice = int(input("\n input 1 to say \"I would like to acquire some drip m'lady\" or 2, to say \"WHAT ARE YOU DOIN IN MY SWAMP!?!?\""))
-   
-    if interactionChoice == 1:
-        pickingClothes()
 
-    elif interactionChoice == 2:
-        slow_print("\n\"GUARDS!!!\" shouts the cashier. Three huge men with sunglasses and black suits escort you from the building.")
-        sleep(1)
-        gamemenu()
-
-    else:
-        slow_print("STOP DEFYING THE GAMES ORDERS YOU- ENOUGH! TO THE MENU WITH YOU!!!")
-        gamemenu()

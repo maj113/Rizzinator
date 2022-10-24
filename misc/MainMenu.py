@@ -5,9 +5,10 @@ from misc.Gym import gymExcercise
 from misc.PLStats import player_stats
 from misc.PerfumeShop import goingToShop
 from misc.saveselect import loadsave
+from misc.ClothesShop import clothesShoping
 story_list = []
 menuchoices = ("  Play story from beginning [1]\n"," Continue story [2]\n"," Increase stats [3]\n ","Check current stats [4]\n"," Exit the game [5]\n")
-statsmenu = ["  Hit the gym [1]\n"," Buy perfume [2]\n"," Go back [3]\n"]
+statsmenu = ["  Hit the gym [1]\n"," Buy perfume [2]\n"," Buy clothes [3]\n"," Go back [4]\n"]
 
 def statsincreasemenu():
     slow_print("What do you want to do:\n " , speed=4)
@@ -21,7 +22,10 @@ def statsincreasemenu():
     elif statschoice == "2":
         goingToShop()
     
-    elif statschoice == "3": 
+    elif statschoice == "3":
+        clothesShoping()
+    
+    elif statschoice == "4": 
         gamemenu()
 
 def slow_print(s, speed = 5):
