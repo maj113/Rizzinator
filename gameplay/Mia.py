@@ -6,7 +6,7 @@ mialvl = [20,25,2]
 miasaves = []
 def miaintro():
     slow_print(ms.miaIntr,speed=8)
-    sleep(2)
+    sleep(1)
     miasaves.append("intro")
     miacontinue = input("Do you wanna continue Mia's story, if so type yes\n ")
     if miacontinue == "yes":
@@ -34,17 +34,17 @@ def miaSecondStory():
     sleep(1)
     if selectedInteraction == 1:
             slow_print(ms.miaAskOut1, speed=8)
-            sleep(0.5)
+            sleep(1)
             slow_print(ms.miaReaction1)
         
     elif selectedInteraction == 2:
             slow_print(ms.miaAskOut2)
-            sleep(0.5)
+            sleep(1)
             slow_print(ms.miaReaction2)
         
     elif selectedInteraction == 3:
             slow_print(ms.miaAskOut3)
-            sleep(0.5)
+            sleep(1)
             slow_print(ms.miaReaction3)
         
     elif selectedInteraction >= 4:
@@ -54,10 +54,10 @@ def miaSecondStory():
     
 def miaThirdStory():
     slow_print(ms.MiaStory3)
-    sleep(1.5)
+    sleep(1)
     print(ms.miaAns1,"\n", ms.miaAns2,"\n", ms.miaAns3)
     selectedInteraction = int(input("\nWhich of these three interactions do you wish to use? input numbers 1, 2 or 3 \n"))
-    sleep(2)
+    sleep(1)
     if selectedInteraction == 1:
             slow_print(ms.miaAns1)
             sleep(1)
