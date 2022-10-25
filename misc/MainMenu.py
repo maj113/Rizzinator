@@ -50,7 +50,7 @@ def gamemenu():
         exit()
 
     elif gamechoice == "4":
-        print("Looks =",player_stats[0],"\nJacked =",player_stats[1],"\nAttraction =",player_stats[2],"\n")
+        print("\nLooks =",player_stats[0],"\nJacked =",player_stats[1],"\nAttraction =",player_stats[2],"\n")
         sleep(1.5)
         gamemenu()
        
