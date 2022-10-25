@@ -12,3 +12,9 @@ def stats1():
     player_stats = [randint(10,100), randint(10,100), randint(1,5)] #looks. jacked, attraction
     return(player_stats)
 stats1()
+
+def MoneyAmount():
+    global money
+    money = [600]
+    return(money)
+MoneyAmount()
