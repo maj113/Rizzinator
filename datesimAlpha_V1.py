@@ -1,4 +1,4 @@
-#Rizzsim Aplha release 1
+#Rizzsim Aplha release 2
 #KrpanKodingKompany, All rights reserved 2022
 from time import sleep
 from tokenize import maybe
