@@ -3,6 +3,7 @@
 from time import sleep
 from tokenize import maybe
 from gameplay.Mia import mialvl
+from gameplay.Emma import emmalvl
 import misc.MainMenu as mm 
 from misc.PLStats import player_stats, playername
 #only using Mia for now since other dont have stories yet, not sure how this even scales with multiple. @gorchii wanna implement?
@@ -13,6 +14,8 @@ print("Looks =",player_stats[0],"\nJacked =",player_stats[1],"\nAttraction =",pl
 sleep(1)
 if mialvl[0] <= player_stats[0] and mialvl[1] <= player_stats[1] and mialvl[2] <= player_stats[2]:
     mm.slow_print("you can pick Mia\n")
+if emmalvl[0] <= player_stats[0] and emmalvl[1] <= player_stats[1] and emmalvl[2] <= player_stats[2]:
+    mm.slow_print("you can pick Emma\n")
     mm.gamemenu()
 else: 
     mm.slow_print("your stats are too low, you can get better stats in the menu.\n")

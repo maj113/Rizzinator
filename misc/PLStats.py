@@ -5,6 +5,10 @@ def playername():
     global PlayerName
     player = input(str("what is your name? "))
     PlayerName = player
+    if PlayerName == "god":
+        player_stats[0] = player_stats[0] + 100
+        player_stats[1] = player_stats[1] + 100
+        player_stats[2] = player_stats[2] + 100
     
 #this will randomize Player_stats so call it only once, then call the variable
 def stats1():
