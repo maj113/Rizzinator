@@ -26,7 +26,7 @@ def clothesShoping():
 def pickingClothes():
     from misc.MainMenu import slow_print, gamemenu
     from misc.PLStats import player_stats, PlayerName
-    slow_print("\nUmmm... o-kayy? What kind of \"drip\" are you looking for? These are the outfits. Cuggi leather jacket Suit DasAdi sweater and fanny pack Lidl outfit")
+    slow_print("\nUmmm... o-kayy? What kind of \"drip\" are you looking for? These are the outfits. Cuggi leather jacket, Suit, DasAdi sweater and fanny pack, Lidl outfit")
     selectedDrip = int(input("Input the the number of the clothing item you wish to select?").strip())
     if selectedDrip == 1:
         sleep(1)
