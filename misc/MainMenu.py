@@ -62,16 +62,15 @@ def gamemenu():
             slow_print("\nSelect your character: ", speed=4)
             if Mia.mialvl[0] <= player_stats[0] and Mia.mialvl[1] <= player_stats[1] and Mia.mialvl[2] <= player_stats[2]:
                 slow_print("\nyou can pick Mia", speed=4)
-            selected_story = input("\nWho are you picking? ").lower().strip()
-            if (selected_story) == ("mia") and Mia.mialvl[0] <= player_stats[0] and Mia.mialvl[1] <= player_stats[1] and Mia.mialvl[2] <= player_stats[2]:
-                story_list = selected_story
-                Mia.miaintro() 
             if Emma.emmalvl[0] <= player_stats[0] and Emma.emmalvl[1] <= player_stats[1] and Emma.emmalvl[2] <= player_stats[2]:
                 slow_print("\nyou can pick Emma", speed=4)
             selected_story = input("\nWho are you picking? ").lower().strip()
             if (selected_story) == ("emma") and Emma.emmalvl[0] <= player_stats[0] and Emma.emmalvl[1] <= player_stats[1] and Emma.emmalvl[2] <= player_stats[2]:
                 story_list = selected_story
-                Emma.miaintro() 
+                Emma.emmaintro() 
+            if (selected_story) == ("mia") and Mia.mialvl[0] <= player_stats[0] and Mia.mialvl[1] <= player_stats[1] and Mia.mialvl[2] <= player_stats[2]:
+                story_list = selected_story
+                Mia.miaintro() 
             else: 
                 slow_print(f"\nYou cannot select {selected_story}\n   ",speed=4)
                 gamemenu()

@@ -33,23 +33,23 @@ def miaSecondStory():
     miasaves.append("2nd story")
     sleep(1)
     if selectedInteraction == 1:
-            slow_print(ms.miaAskOut1, speed=8)
-            sleep(1)
-            slow_print(ms.miaReaction1)
-        
+        slow_print(ms.miaAskOut1, speed=8)
+        sleep(1)
+        slow_print(ms.miaReaction1)
+        miaThirdStory()
     elif selectedInteraction == 2:
-            slow_print(ms.miaAskOut2)
-            sleep(1)
-            slow_print(ms.miaReaction2)
-        
+        slow_print(ms.miaAskOut2)
+        sleep(1)
+        slow_print(ms.miaReaction2)
+        miaThirdStory()
     elif selectedInteraction == 3:
-            slow_print(ms.miaAskOut3)
-            sleep(1)
-            slow_print(ms.miaReaction3)
-        
+        slow_print(ms.miaAskOut3)
+        sleep(1)
+        slow_print(ms.miaReaction3)
+        exit()
     elif selectedInteraction >= 4:
-            slow_print("BRO 4 AND ABOVE WASN'T AN OPTION!!!", speed=5)
-            gamemenu()
+        slow_print("BRO 4 AND ABOVE WASN'T AN OPTION!!!", speed=5)
+        gamemenu()
 
     
 def miaThirdStory():
