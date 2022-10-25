@@ -32,18 +32,22 @@ def pickingClothes():
         sleep(1)
         slow_print("\"Daaayumm this jacket makes me look great\"")
         player_stats[0] = player_stats[0] + 10
+        gamemenu()
     elif selectedDrip == 2:
         sleep(1)
         slow_print("\"I look classy!\"")
         player_stats[0] = player_stats[0] + 15
+        gamemenu()
     elif selectedDrip == 3:
         sleep(1)
         slow_print("\"I look like a drug dealer!\"")
         player_stats[0] = player_stats[0] + 7
+        gamemenu()
     elif selectedDrip == 4:
         sleep(1)
         slow_print(f"You put on the Lidl outfit, and feel a surge of pure god-like energy coursing through your veins. You hear a booming voice \"{PlayerName} I KNEW YOU WERE THE CHOSEN ONE! GO GET 'EM TIGER!\"")
         player_stats[0] = player_stats[0] + 25
+        gamemenu()
     else: 
         slow_print("STOP DEFYING THE GAMES ORDERS YOU- ENOUGH! TO THE MENU WITH YOU!!!")
         gamemenu()
