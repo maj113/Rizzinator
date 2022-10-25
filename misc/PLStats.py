@@ -15,5 +15,6 @@ stats1()
 
 def MoneyAmount():
     global money
-    money = randint(50,250)
+    money = [600]
+    return(money)
 MoneyAmount()

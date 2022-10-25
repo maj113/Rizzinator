@@ -4,7 +4,6 @@ from time import sleep
 
 
 def clothesShoping():
-    from misc.PLStats import player_stats, PlayerName, money
     from misc.MainMenu import slow_print, gamemenu
     slow_print("\n\"A real man needs a good looking outfit\" you think to yourself while walking to the local red cross to pick out some serious drip. \"Hello! how can I help you? The red cross employee asks you.",speed=7)
     sleep(1)
@@ -30,9 +29,9 @@ def pickingClothes():
     selectedDrip = int(input("Input the the number of the clothing item you wish to select? ").strip())
     if selectedDrip == 1:
         sleep(1)
-        if money >= 50:
-            money = money - 50
-            slow_print(f"\"Daaayumm this jacket makes me look great!\" despite looking fabulus you spent 50$ you now have {money}$.")
+        if money[0] >= 50:
+            money[0] = money[0] - 50
+            slow_print(f"\"Daaayumm this jacket makes me look great!\" despite looking fabulus you spent 50$ you now have {money[0]}$.")
             player_stats[0] = player_stats[0] + 25
             gamemenu()
         else:
@@ -41,9 +40,9 @@ def pickingClothes():
 
     elif selectedDrip == 2:
         sleep(1)
-        if money >= 70:
-            money = money - 70
-            slow_print(f"\"I look classy!\" despite looking fabulus you spent 70$ and now have {money}$.")
+        if money[0] >= 70:
+            money[0] = money[0] - 70
+            slow_print(f"\"I look classy!\" despite looking fabulus you spent 70$ and now have {money[0]}$.")
             player_stats[0] = player_stats[0] + 25
             gamemenu()
         else:
@@ -52,9 +51,9 @@ def pickingClothes():
 
     elif selectedDrip == 3:
         sleep(1)
-        if money >= 70:
-            money = money - 70
-            slow_print(f"\"I look like a drug dealer!\" despite looking fabulus you spent 70$ and now have {money}$.")
+        if money[0] >= 70:
+            money[0] = money[0] - 70
+            slow_print(f"\"I look like a drug dealer!\" despite looking fabulus you spent 70$ and now have {money[0]}$.")
             player_stats[0] = player_stats[0] + 25
             gamemenu()
         else:
@@ -63,9 +62,9 @@ def pickingClothes():
 
     elif selectedDrip == 4:
         sleep(1)
-        if money >= 600:
-            money = money - 600
-            slow_print(f"You put on the Lidl outfit, and feel a surge of pure god-like energy coursing through your veins. You hear a booming voice \"{PlayerName} I KNEW YOU WERE THE CHOSEN ONE! GO GET 'EM TIGER!\" despite having God's approval you spent 600$ and now have only {money}$.")
+        if money[0] >= 600:
+            money[0] = money[0] - 600
+            slow_print(f"You put on the Lidl outfit, and feel a surge of pure god-like energy coursing through your veins. You hear a booming voice \"{PlayerName} I KNEW YOU WERE THE CHOSEN ONE! GO GET 'EM TIGER!\" despite having God's approval you spent 600$ and now have only {money[0]} $.")
             player_stats[0] = player_stats[0] + 25
             gamemenu()
         else:

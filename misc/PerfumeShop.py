@@ -18,13 +18,13 @@ def goingToShop():
         if perfume_picked == "challen":
             sleep(1)
             player_stats[2] = player_stats[2] + 1 
-            money = money - 20
+            money = money[0] - 20
             slow_print(f"\nYou did a little perfume testing, and decided to pick \"Challen\". Your attraction stat is now: {player_stats[2]}, and you spent 20$ on it and now have {money}$ left.") 
             gamemenu()
 
         elif perfume_picked == "bugo hoss":
             sleep(1)
-            money = money - 40
+            money = money[0] - 40
             player_stats[2] = player_stats[2] + 1
             slow_print(f"\nYou do a little perfume testing, and decided to pick \"Bugo Hoss\". Your attraction stat is now: {player_stats[2]}, and you blew 40$ on it and now have {money}$ left.")
             gamemenu()
@@ -37,7 +37,7 @@ def goingToShop():
 
         elif perfume_picked == "juzza":
             sleep(1)
-            money = money - 25
+            money = money[0] - 25
             player_stats[2] = player_stats[2] + 1
             slow_print(f"\nYou took a look at the Juzza bottle and asked around if anyone knew what the hell Juzza is. Much to your dissapointment no one knew what it was and the cashier said it isn't even in their inventory. Nevertheless you now smell like raspberies and creampie. Your attraction stat is now: {player_stats[2]}. The cashier also demanded 25$ and you now have {money}$ left.")
             gamemenu()
