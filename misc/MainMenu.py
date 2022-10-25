@@ -2,13 +2,14 @@ from random import uniform
 from gameplay import Emma, Mia
 from time import sleep
 from misc.Gym import gymExcercise
-from misc.PLStats import player_stats
+from misc.PLStats import player_stats, money
 from misc.PerfumeShop import goingToShop
 from misc.saveselect import loadsave
 from misc.ClothesShop import clothesShoping
+from misc.work import GoToWork
 story_list = []
 menuchoices = ("  Play story from beginning [1]\n"," Continue story [2]\n"," Increase stats [3]\n ","Check current stats [4]\n"," Exit the game [5]\n")
-statsmenu = ["  Hit the gym [1]\n"," Buy perfume [2]\n"," Buy clothes [3]\n"," Go back [4]\n"]
+statsmenu = ["  Hit the gym [1]\n"," Buy perfume [2]\n"," Buy clothes [3]\n"," Go to work [4]\n"," Go back [5]\n"]
 
 def statsincreasemenu():
     slow_print("What do you want to do:\n " , speed=4)
@@ -26,6 +27,9 @@ def statsincreasemenu():
         clothesShoping()
     
     elif statschoice == "4": 
+        GoToWork()
+    
+    elif statschoice == "5":
         gamemenu()
 
 def slow_print(s, speed = 5):
@@ -50,7 +54,7 @@ def gamemenu():
         exit()
 
     elif gamechoice == "4":
-        print("\nLooks =",player_stats[0],"\nJacked =",player_stats[1],"\nAttraction =",player_stats[2],"\n")
+        print("\n Looks = ",player_stats[0],"\n Jacked = ",player_stats[1],"\n Attraction = ",player_stats[2],"\n Money = ",money,"\n")
         sleep(1.5)
         gamemenu()
        
