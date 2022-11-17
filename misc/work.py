@@ -10,7 +10,6 @@ def GoToWork():
         slow_print("\nyou can not work for more than 60 seconds!", speed=4)
         GoToWork()
     else:
-        #this needs to be improved, @Gorchii please improve 
         money[0] = money[0] + (worktime*3)
         for l in range(worktime):
             print("🤓 ", flush = True,end="")
