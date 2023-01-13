@@ -1,5 +1,5 @@
 #Rizzsim Aplha release 2
-#KrpanKodingKompany, All rights reserved 2022
+#KrpanKodingKompany, All rights reserved 2022-2023
 from time import sleep
 from misc.PLStats import MoneyAmount, player_stats, playername, money
 from gameplay.Mia import mialvl
